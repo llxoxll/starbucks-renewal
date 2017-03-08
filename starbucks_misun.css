@@ -1,0 +1,636 @@
+
+ 	@font-face{font-family: 'NanumBarunGothic'; src:url('NanumBarunGothic.ttf');}
+	body{font-family: 'NanumBarunGothic','나눔바른고딕';}
+	body, html{margin:0; padding:0; width: 100%; height: 100%;}
+	h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,p{margin:0; padding: 0;}
+	img {margin: 0; display: block; margin-left: auto; margin-right: auto; width: 100%;
+		border:0 none;}
+	li {list-style: none;}
+	a{color: inherit; text-decoration: none;}
+	ul,li {list-style: none;}
+	input{height: 30px; margin-top:7px; border:2px solid #007042; background-color: #fff;
+         font-size: 18px;}
+   	select{width: 100px; height: 30px; border:2px solid #007042; background-color: #fff;
+         font-size: 18px; margin-top:7px;}
+	#skipnavigation a:focus, #skipnavigation a:active{left:0; padding:5px 0;
+	background:#000;color:#fff;border:1px solid #ff0;}
+	#skipnavigation a{width:200px;display:block;position:absolute;left:-3000%;
+		top:0;text-align: center;z-index:3;}
+
+
+	#m_wholewrap {display: none;}
+	#pad_wholewrap {display: none;}
+	#web_box{display: block;}
+
+	#wholewrap {width: 100%; margin: 0 auto;}
+	#wrap{ z-index:1000;background-color: #fff;width: 100%;position: absolute; top: 0; }
+	#bodywrap{background-color: #fff; width: 100%; 
+				background-size: 100%;}
+	#containerwrap_main{width:1263px;position: relative;overflow: hidden; margin:0 auto;}
+	#header{width:100%; height: 175px; border-bottom: 1px solid #2c1810;
+				background: #fff; position: relative;}
+	#header_inside{width:1263px;height:175px; position: relative; margin:0 auto;}
+	.topbar{width: 100%; height: 7px; background: #007042; position: absolute;top:0;left:0;}
+	.topbar_wrap{width: 100%; height: 8px; background: #007042; position: absolute;top:0;left:0;
+				z-index: 1001;}
+	#slidebtn_wrap{width: 100%;height: 100px;background: #007042; position: absolute; top:-100px; z-index: 999;}
+	#slidebtn{width:1263px; height:100px;position: relative;overflow: hidden; margin:0 auto;}
+   #topboxbtn{z-index:1001;width: 150px; height: 23px; background: #007042; position: absolute; top:7px; 
+            right: 45px; border-radius: 0 0 5px 5px;  }
+   #topboxbtn p{font-size: 12px; font-weight: bold; color: #fff; text-align: center;letter-spacing: 1px; margin-top: 3px; }
+   .myreward_box1, .myreward_box2{width: 45%; height: 100px; box-sizing: border-box; float: left; margin-left: 4%;
+                            position: relative;}
+   .rewardtext_style1{font-size: 18px; font-weight: bold; color: #fff;}
+   .rewardtext_style2{font-size: 14px; font-weight: normal; color: #fff;}
+   .rewardpic_box1{position: absolute; width: 95px; height: 93px; top: 5px; left: 50px;  }
+   .myreward_box1:hover{background-color: #fff;}
+   .myreward_box1:hover .rewardtext_style1{color: #007042;}
+   .myreward_box1:hover .rewardtext_style2{color: #007042;}
+   .myreward_box2:hover{background-color: #fff;}
+   .myreward_box2:hover .rewardtext_style1{color: #007042;}
+   .myreward_box2:hover .rewardtext_style2{color: #007042;}
+   .rewardpic_box1{position: absolute; width: 95px; height: 93px; top: 5px; left: 50px;  }
+   .myreward_box1:hover{background-color: #fff;}
+   .myreward_box2:hover{background-color: #fff;}
+   .rewardpic_box1{background: url('starbucksicons.png')-653px -165px; width: 94px; height: 90px;}
+   .rewardtext_box1{position: absolute; width: 380px; height: 80px; top: 11px; left: 170px; line-height: 18px; }
+   .rewardpic_box2{position: absolute; width: 97px; height: 98px; top: 0px; left: 50px;}
+   .rewardpic_box2{background: url('starbucksicons.png')-452px -65px; width: 97px; height: 98px;
+               background-size: 600px 600px;}
+
+	.midbox {width: 100%; height: 75px; float: left; overflow: hidden; position: absolute;top: 24px; left: 0;}
+	.snsbox {width: 360px; height: 75px; margin: 0 0 0 20px;float: left; text-align: center;line-height: 75px;}
+	.snsbox ul li{font-size: 12px; color: #2c1810; display: inline-block;margin-right: 10px;}
+	.logobox {width: 76px; height: 76px; margin-left:-38px; position: absolute;left:50%;}
+	.logo {background: url('starbucksicons.png') -0px -0px; width: 76px; height:76px;}
+	.searchbox { height: 20px; float: right; overflow: hidden; text-align: center;
+               margin:40px 20px 0 0; line-height: 20px; display: inline-block;}
+   .searchbox ul li{font-size: 12px; color: #2c1810; display: inline-block;
+                  margin-right: 25px; float: left;}
+   .siconbox {width: 20px; height: 20px; float: right; margin: 40px 50px 0 0; }
+   .sicon {background: url('starbucksicons.png') -875px -39px; width: 20px; height: 20px;}
+   #searchingbox{width: 0px; height: 50px;position: relative;
+   				float: right; display: none; margin: 23px 20px 0 0;  }
+   #textbox{width: 100%; background-color: #007042;}
+   .closebtn_box{width: 13px; height: 13px; position: absolute; top: 18px; right: 8px; }
+   .closebtn_box{background: url('starbucksicons.png') -62px -794px; width: 13px; height: 13px;}
+	.bottombox {width: 100%; height: 51px; position: absolute; left: 0; bottom: 0; 
+					background: #007042;}
+	.bottombox_wrap{width: 100%; height: 51px; position: absolute; left: 0; bottom: 0px; 
+					background: #ffffff;}
+	.logbox {width: 180px; height: 51px; margin-left: 20px; float: left; text-align: center;
+				line-height: 51px;}
+	.logbox ul li{display: inline-block; color: #fff; font-size: 12px;
+					margin-right: 45px; float: right;}
+	.menubox {width: 590px; height: 51px; overflow: hidden; float: right; text-align: center; line-height: 51px;}
+	.menubox > ul > li{display: inline-block; color: #fff; float: left;margin-right: 60px; font-size: 12px; }
+	#menu_hover_show{display:none;width:100%;height:275px; border-top: 1px solid #998366;
+				 background: #fff; position:absolute; top:51px; left:0;z-index: 10;  border-bottom: 2px solid #007042;}
+	
+	#menu_hover{width:40px;height:50px; display: block;}
+	#menu_hover_show ul{width:14%; height:250px;margin:1%; text-align: left; padding-left: 4%; 
+				display:inline-block;float:left;}	
+	#menu_hover_show ul li:not(.menu_menu_title){width:100%;line-height: 20px; 
+										color: #000;font-size: 12px; margin-bottom: 5px;}
+	.menu_menu_title{color: #007042; font-size: 14px; margin-bottom: 20px;
+		font-weight: bold;width:100%;line-height: 20px;}
+	#q_menu{
+	width: 30px;
+	height: 27px;
+	border: 1px solid #000;
+	color: #fff;
+	background-color: #007042;
+	position: absolute;
+	margin-left:96%;
+	margin-top: 500px;
+	z-index: 999;
+	text-align: center;
+	line-height: 27px;
+	border-radius: 10px 10px 10px 10px;
+	}
+
+	/*sub menu coffee*/
+	.coffee_submenu, .store_submenu, .respon_submenu, .new_submenu {width: 100%; height: 275px; background-color: #fff; border-top: 1px solid #998366;
+						display:none; position: absolute; top: 51px; left: 0;
+					z-index: 10;  border-bottom: 2px solid #007042;}
+	
+	.coffee_show{width: 40px; height: 51px; display: block; }
+	.s_coffeetitle{font-size: 14px; margin-bottom: 20px; font-weight: bold; color: #007042;}
+	
+	.s_coffeemenu{font-size: 12px; color: #000; line-height: 30px;}
+	.coffee_submenu ul {width: 190px; height: 275px; display: inline-block; float: left; margin-left: 20px; }
+	.coffee_submenu ul:first-child{width: 150px;}
+	.coffee_submenu > ul > li {text-align: left;}
+
+	/*sub menu store*/
+	.store_submenu ul{width: 190px; height: 275px; display: inline-block; float: left; margin-left: 60px; }
+	.store_submenu > ul > li {text-align: left;}
+	
+
+	/*sub menu repon*/
+	.respon_submenu ul{width: 170px; height: 275px; display: inline-block; float: left; margin-left: 60px; }
+	.respon_submenu > ul > li {text-align: left;}
+	
+	
+	.store_show{width: 80px; height: 51px; display: block; }
+
+	/*sub menu new*/
+	.new_submenu ul{width: 155px; height: 275px; display: inline-block; float: left; margin-left: 60px; }
+	.new_submenu > ul > li {text-align: left;}
+	
+	/*sub menu what's new*/
+
+	/*main container1*/
+
+	/*m_header*/
+	#m_wholewrap {width:100%; background-color: #ded9d6;}
+	.disappear_box {display: block;}
+	.disappear_box2{display: block;}
+	#m_header {width: 100%; height: 70px; background: #f8faf0; position: relative;}
+	.m_logobox {width: 20%; height: 35px; position: absolute; top: 20px; left: 25px;}
+	.m_logo { width: 35px; height: 35px;background: url('starbucksicons.png') -326px -22px;
+			background-size: 700px 700px;  }
+	.m_navibox {width: 80%; height: 55px; position: absolute; top: 22px; right: 2px;}
+	.m_searchbox {width: 20%;float: right;}
+	.m_searchicon { width: 27px; height: 28px;background: url('starbucksicons.png') -294px -27px;
+					text-align: center; background-size: 700px 700px;}
+	.m_loginbox {width: 20%; float: right;}
+	.m_loginicon { width: 23px; height: 28px;background: url('starbucksicons.png') -267px -25px;
+					text-align: center; background-size: 700px 700px;}
+	.m_storebox {width: 20%;float: right;}
+	.m_storeicon { width: 21px; height: 28px;background: url('starbucksicons.png') -239px -27px;
+					text-align: center; background-size: 700px 700px;}
+	.m_menubox {width: 20%;float: right;}
+	.m_menuicon { width: 29px; height: 27px;background: url('starbucksicons.png') -206px -27px;
+					text-align: center; background-size: 700px 700px;}
+	#m_container1 {width: 100%; position: relative; background-color: #fff;}
+	.m_mcbox1 {width: 50%; height: 180px; float: left;}
+	.m_mcicon1 { width: 100px; height: 89px;background: url('starbucksicons.png') -0px -90px;
+					; background-size: 700px 700px; margin-top: 25%; margin-left: 18%;}
+	.m_mcbox2 {width: 50%; height: 180px; float: left;}
+	.m_mcicon2 { width: 71px; height: 14px;background: url('starbucksicons.png') -65px -8px;
+					; background-size: 700px 700px; margin-top: 20%; margin-left: 10%;}
+	.m_mcbox2 p{color: #fff; font-size: 11px;line-height: 14px; padding-left: 3px; }
+	.m_mctext2 { width: 80%; height: 45px; position: absolute; bottom: 20%; left: 10%; }
+
+
+
+
+
+	
+	/*footer*/
+	#mempty_container5{width: 100%; height: 57px; overflow: hidden;}
+	#footer {width: 1200px; height: auto; margin: 0 auto;}
+	#footer ul li{list-style: none;}
+	.footer_box1 {width: 500px; height: 300px; float: left; position: relative;}
+	.f_iconbox {width: 150px; height: 20px; position: absolute; top: 150px; left: 0;}
+	.f_icon{background: url('starbucksicons.png') -583px -281px; width: 150px; height: 20px;}
+	.f_textbox {width: 460px; height: 90px; position: absolute; bottom: 10px; left: 0;line-height: 20px;}
+	.f_textbox span{font-size: 11px;}
+	.footer_box2 {width: 700px; height: 296px; float: left; border-top: 3px solid #007042;border-bottom: 1px solid #007042;}
+	.f_menubox1 {width: 120px; height: 250px; float: left; text-indent: 15px;}
+	.f_menubox1 ul li{font-size: 11px; color: #2c1810; line-height: 30px;}
+	.f_mbox1 {width: 75px; height: 50px; }
+	.f_mbox1 p{font-size: 12px; font-weight: bold; color:#2c1810; text-align:center;line-height: 50px;}
+	.f_menubox2 {width: 160px; height: 250px; float: left; text-indent: 20px;}
+	.f_menubox2 ul li{font-size: 11px; color: #2c1810; line-height: 30px;}
+	.f_mbox2 {width: 160px; height: 50px; }
+	.f_mbox2 p{font-size: 12px; font-weight: bold; color:#2c1810;line-height: 50px;}
+	.f_menubox3 {width: 140px; height: 250px; float: left; text-indent: 28px;}
+	.f_menubox3 ul li{font-size: 11px; color: #2c1810; line-height: 30px;}
+	.f_mbox3 {width: 110px; height: 50px; }
+	.f_mbox3 p{font-size: 12px; font-weight: bold; color:#2c1810; text-align:center;line-height: 50px;}
+	.f_menubox4 {width: 110px; height: 250px; float: left; text-indent: 28px;}
+	.f_menubox4 ul li{font-size: 11px; color: #2c1810; line-height: 30px;}
+	.f_mbox4 {width: 80px; height: 50px; }
+	.f_mbox4 p{font-size: 12px; font-weight: bold; color:#2c1810; text-align:center;line-height: 50px;}
+	.f_menubox5 {width: 145px; height: 250px; float: left; position: relative;}
+	.f_munuinb {width: 75px; height: 80px; position: absolute; top: 15px; right: 20px;}
+	.f_munuinb ul li{list-style: none; float: right; font-size: 13px; font-weight: bold;
+						line-height: 25px;}
+	.f_snsbox {width: 230px; height:46px; float: right; }
+	.f_snsbox ul li{list-style: none;}
+	.f_bfacebook {width: 30px; height: 30px; float: left; margin-right: 15px;}
+	.f_facebook {background: url('starbucksicons.png') -290px -0px; width: 30px; height: 30px;}
+	.f_btwitter {width: 30px; height: 30px;  float: left; margin-right: 15px;}
+	.f_twitter {background: url('starbucksicons.png') -321px -0px; width: 30px; height: 30px;}
+	.f_byoutube {width: 30px; height: 30px;  float: left; margin-right: 15px;}
+	.f_youtube {background: url('starbucksicons.png') -352px -0px; width: 30px; height: 30px;}
+	.f_bblog {width: 30px; height: 30px;  float: left; margin-right: 15px;}
+	.f_blog {background: url('starbucksicons.png') -383px -0px; width: 30px; height: 30px;}
+	.f_binstagram {width: 30px; height: 30px;  float: left; margin-right: 15px;}
+	.f_instagram {background: url('starbucksicons.png') -414px -0px; width: 30px; height: 30px;}
+	#mempty_container6{width: 100%; height: 30px; overflow: hidden;}
+	#footer2 {width: 100%; height: 35px; margin-left: 21%}
+	.f_fbox1 {width: 90px; height: 35px; float: left;}
+	.f_fbox1 p{font-size: 11px; color: #007042; font-weight: bold; text-align: center;}
+	.f_fbox2 {width: 170px; height: 35px; float: left;}
+	.f_fbox2 p{font-size: 11px; color: #2c1810; font-weight: bold; text-align: center;}
+	.f_fbox3 {width: 100px; height: 35px; float: left;}
+	.f_fbox3 p{font-size: 11px; color: #2c1810; font-weight: bold; text-align: left;}
+	.f_fbox4 {width: 100px; height: 35px; float: left;}
+	.f_fbox4 p{font-size: 11px; color: #2c1810; font-weight: bold; text-align: left;}
+	.f_fbox5 {width: 120px; height: 35px; float: left;}
+	.f_fbox5 p{font-size: 11px; color: #2c1810; font-weight: bold; text-align: left;}
+	.f_fbox6 {width: 100px; height: 35px; float: left;}
+	.f_fbox6 p{font-size: 11px; color: #2c1810; font-weight: bold; text-align: left;}
+
+	/*m_footer*/
+	.mobile_show, .mobile_show2, .tablet_show{display: none;}
+	#m_footer{width:100%;background-color: #f8faf0;}
+	.m_footer_box1{width:100%;height:58px;border-bottom:1px solid #2c1810;
+					position: relative;}
+	.m_footer_box1 .font_brown16{width: 70%; line-height: 58px; text-indent: 5%;
+								box-sizing: border-box; position: absolute;left:0;}
+	.m_footer_box2{width:100%; border-bottom:1px solid #2c1810;
+					position: relative; overflow: hidden;
+					padding-top: 5%; padding-bottom: 5%;}
+	.brown_arrow_down{background: url('starbucksicons.png') -0px -763px;
+				 width: 35px; height: 23px; position: absolute; 
+				 right:5%; top:20px;
+				box-sizing: border-box;}	
+	.m_footer_box4{width:28%;height:42px; border:2px solid #2c1810;
+					margin:2%; float:left;}
+	.m_footer_box4 .font_brown14{text-align: center; line-height: 42px;}
+	.m_footer_box3{width:100%;position: relative; overflow:hidden;padding-top:5%;}
+	.m_footer_box3 ul li{float:left;padding-left: 2%;
+   						 padding-right: 2%; padding-top: 5px;}
+	.m_footer_box3 ul li a:hover{color:#007042;}
+	.m_footer_box6{width:100%; padding-top: 10%; padding-bottom: 5%;}
+	.m_footer_box6 .font_brown14{text-align: center;}
+
+
+
+	/*menu_coffee*/
+
+	#container_menu_coffee{width:100%;
+							position: relative;overflow: hidden; margin:0 auto;}
+	.headline_menu{font-family: 'headline R'; font-size: 30px; text-align: center;
+					 color:#2c1810; position: absolute; top:30%; left:43.5%;}
+	.menulist_box{width:100%; display:inline-block; margin-bottom: 50px;
+					margin-left:auto; margin-right:auto;}
+	.fullbox{width:100%;  float:left;position: relative; 
+			background-color: #fff;}
+
+	.halfbox{width:50%;float:left; position:relative;}
+	.font_orange20{color:#f49f68; font-size: 20px; font-weight: bold;}
+	.font_white16{color:#fff; font-size: 16px; text-align: center; line-height: 26px;}
+	.font_red16{color:#ca0d2d;font-size: 16px;}
+	.halfbox_text{width:500px; height:150px; position:absolute;top:40%; left:5%;}
+	.clickbox_white{background: url('starbucksicons.png')-122px -822px;
+					width:120px; height:32px;position: absolute; right:5%; bottom:10%;}
+	.clickbox_black{background: url('starbucksicons.png')-1px -822px;
+					width:120px; height:32px;position: absolute; right:5%; bottom:10%;}
+	.halfbox_text2{width:320px; height:210px;position: absolute;top:20%; right:5%;}
+	#align_end, .end{text-align: end;}
+	.halfbox_text2 .font_black16{text-align: center;}
+	.font_black20{color:#000;font-size: 20px;font-weight: bold;}
+	.font_black16{color:#000;font-size: 16px;font-weight: bold;}
+	#bean_img01,#bean_img03{display:none;}
+	.halfbox_text3{width:453px; height:180px; position:absolute;top:20%; right:25%;}
+	.halfbox_text3 .font_black20{ line-height: 60px;}
+	#right30{right:25%;}
+	
+	.halfbox_text4{width:200px; height:160px; position:absolute;top:25%; right:10%;}
+	.font_brown20{color:#2c1810; font-size: 20px; font-weight: bold; }
+	.font_brown16{color:#2c1810; font-size: 16px; font-weight: bold;}
+	.font_brown14{color:#2c1810; font-size: 14px; }
+	.halfbox_text5{width:215px; height:160px; position:absolute;top:25%; right:10%;}
+	.font_white20{color:#fff; font-size: 20px; font-weight: 500;}
+	.font_white16{color:#fff; font-size: 16px;}
+	.font_white{color:#fff;}
+	.font_gray{color: #727272;}
+	.font_bold{font-weight: bold;}
+
+	/*menu_coffee_coffeestory*/
+	#container_coffeestory{width:1263px; height: auto; position: relative;
+					overflow: hidden; margin:0 auto;}
+	.top_img01{width:100%; position: relative;overflow: hidden;}
+	.toptextbox01{width:432px; height:auto; position: absolute;top:12%; right:10%;}
+	.toptextbox02{width:380px; height:auto; position: absolute;top:20%; left:10%;}
+	.toptextbox01 .font_white20, .toptextbox01 .font_white16{font-weight: bold;}
+	.clickbox_beige{width:150px; height:38px;background-color: #c1ae96;
+					color:#fff; border-radius: 10px; margin-top:20px; font-size: 16px;
+					text-align: center;line-height: 38px; font-weight: bold;}
+	.clickbox_beige:hover{background-color: #007042;color:#fff;}
+	.clickbox_beige2{width:200px; height:38px;background-color: #c1ae96;
+					color:#fff; border-radius: 10px; margin-top:20px; font-size: 16px;
+					text-align: center;line-height: 38px; font-weight: bold;}
+	.clickbox_beige2:hover{background-color: #007042;color:#fff;}
+	.submenubox01{width:1200px;height:38px; border:1px solid #8e8e8e;
+					position:relative; margin:0 auto;}
+	.submenubox_title{width:15%;height:38px;box-sizing: border-box;float:left;
+					border-right:1px solid #8e8e8e;	}
+	.submenubox_title .font_brown20{text-align: center;line-height: 38px;}
+	.submenubox_right{width:85%;height:38px;
+					box-sizing: border-box; float:right;}
+	.submenubox_quarter{width:25%;height:38px; border-right:1px solid #8e8e8e;
+					float:left; box-sizing: border-box;text-align: center;line-height: 38px;
+					font-weight: bold;color: #007042; font-size: 14px;}
+	.submenubox_quarter .bottom_arrow_down{display:none;}
+	.submenubox_quarter_on{width:25%;height:38px; border-right:1px solid #8e8e8e;
+					float:left; box-sizing: border-box;text-align: center;line-height: 38px;
+					font-weight: bold;color: #fff; font-size: 14px;background-color:#007042;}
+	.submenubox_quarter_on .bottom_arrow_down{width:100%;height:38px; position: absolute:top:0;
+						background:url('starbucksicons.png')-0px -799px;
+						 width:19px;height:19px; margin: 0 auto;
+						 display: block;}
+	#tab_menu_list li{width:25%;height:38px;}
+	#roast_spectrum{display:block;}
+	#best_arabica, #until_acupofcoffee,#clover_coffee_extract{display:none;}
+
+	.banner_box{width:1200px; margin:0 auto; position:relative; 
+				overflow: hidden;}
+	.banner_box2{width:1200px; height:48px; margin:0 auto; position:relative;
+				}
+	.banner_box3{width:1100px; margin:0 auto; position:relative;
+				border:1px solid #727272;
+				overflow: hidden;}
+	.banner_box4{width:1200px; margin:0 auto; position:relative;
+				border:1px solid #727272;
+				overflow: hidden;}	
+	.banner_box5{width:1200px; height:170px; margin:0 auto; position:relative;
+				overflow: hidden;}		
+	.coffee_story_text{width:585px;}
+	.font_green16{color:#007042; font-size: 16px; font-weight: bold;}
+	.coffee_story_text .font_brown14{font-weight: 500;}
+	.banner_box .clickbox_beige2{position: absolute;top:15%; right:5%;}
+	.banner_box_center{width:100%; height:48px; margin:0 auto;
+						}
+	.banner_box_center2{width:100%; height:174px; margin:0 auto;
+						}
+	.banner_box_center .font_white16{text-align: center;width:180px; height:26px;
+						position: absolute;top:27% ;left:43%;}
+	.banner_box_center2 .font_white16{text-align: center;width:180px; height:26px;
+						position: absolute;top:8% ;left:43%;}
+	.roasting_box{width:30%; height:378px;border:1px solid #727272; 
+				box-sizing: border-box; margin: 1%; float:left; }
+	.roasting_box .font_gray{font-weight: bold;text-align: center; 
+				border-bottom:1px solid #727272; line-height: 28.67px; }
+	.roasting_textbox{margin: 5%; line-height: 22px;}
+	.arbica_box{width:40%; margin:4%; box-sizing: border-box; 
+		float:left;}
+	.arbica_box2{width:50%;box-sizing: border-box; 
+		float:left;}
+	.img135{width:135px; height:135px;box-sizing: border-box; float:left;}
+	.fullbox2{width:100%; float:left;position: relative; overflow: hidden; margin-top: 20px; line-height: 22px;}	
+	.fullbox_text{width:95%; margin:2%;float:left;
+				position: relative; overflow: hidden;}
+	.fullbox2 .font_brown16{float:left;position: relative; padding-top:70px;
+							padding-left: 10px;}
+	.arbica_box2 .fullbox2 .font_brown16{width:90%; 
+							margin:5%; padding:0; margin-bottom: 15px;}
+	.arbica_box2 .fullbox2 .font_brown14{width:90%; 
+							margin:5%; padding:0;}
+	
+	.box35{width:35%; position: relative;overflow: hidden; 
+			box-sizing: border-box; float: left;}
+	.box65{width:65%; position: relative;overflow: hidden;
+			box-sizing: border-box; float: left;}
+	.box40{width:40%; position: relative;overflow: hidden; 
+			box-sizing: border-box; float: left;}
+	.box60{width:60%; position: relative;overflow: hidden;
+			box-sizing: border-box; float: left;}		
+	.box65 .fullbox2 .font_brown16{width:90%; 
+							margin:5%; padding:0; margin-bottom: 6%;}
+	.box65 .fullbox2 .font_brown14{width:90%; 
+							margin:5%; padding:0;}
+	.box60 .fullbox2 .font_brown16{width:95%; 
+							margin:2%; padding:0;}
+	.box60 .fullbox2 .font_brown14{width:95%; 
+							margin:2%; padding:0;}
+	.reserve_logo_box{width:80px; height:80px; 
+				box-sizing: border-box;float:left; background-color: #242423;}
+	.reserve_text_box{width:910px;height:80px;
+				box-sizing: border-box;float:left; background-color: #000;}
+	.reserve_text_box .font_white,
+	.reserve_click_box .font_white{text-align: center; line-height: 80px;}
+	.reserve_click_box{width:210px; height:80px;
+				box-sizing: border-box;float:left; background-color: #242423;}
+	.reserve_click_box:hover{background-color: #555;}
+	.reserve_click_box:hover .font_white{color:#000;font-weight: bold;}
+/*Starbucks Coffee*/
+	.category_sublist .font_brown14{float:left; margin-left:15px;
+				font-weight: bold;}
+	.category_sublist .font_brown14:hover{color:#007042;}
+	.banner_box_white{width:1200px; margin:0 auto; position:relative;
+				overflow: hidden; background-color: #fff;}
+	.box20{width:20%;position: relative;overflow: hidden;
+			box-sizing: border-box;float:left;}
+	.img150{width:150px;margin: 5% auto;}
+	.box20 .font_brown14{text-align: center;margin:5%; height: 30px;}
+	.position_absolute{width:100%; position: absolute; top:0; z-index: 10;}
+	.banner_white_back{width:1200px;height:24px; background-color: #fff;
+		position: absolute; bottom:0;z-index: 1;}
+	.banner_img_back{width:1200px;height:150px; background-color: #fff;
+		position: absolute; top:24px;z-index: 1;}
+	#tab_category_menu{display:block;}
+	#tab_theme_menu{display: none;}
+
+/*Starbucks Food*/
+	.theme_img150{width:100px; height:75px; margin:10px auto; position: relative;
+				overflow:hidden;}
+	.box10{width:10%;position: relative;overflow: hidden;
+			box-sizing: border-box;float:left;}
+	.box10 .font_brown14{text-align: center;margin:5%; height: 50px;}
+	.theme_submenu_list{margin-left:5%; position: relative;overflow:hidden;}
+
+
+	@media (min-width:571px) and (max-width:960px){
+		.disappear_box2, .mobile_show{display:none;}
+		.disappear_box, .mobile_show2, .tablet_show{display:block;}
+		#wholewrap, #wrap, #header{width:100%;}
+		#container_menu_coffee{width:100%; margin:0 auto;}
+		.menulist_box {width:100%; margin-top: 0;}
+		.headline_menu{font-family: 'headline R'; font-size: 20px; text-align: center;
+					 color:#2c1810; position: absolute; top:30%; left:43.5%;}
+		.fullbox{width:100%;}
+		.halfbox{width:100%;display: inline-block;}
+		.halfbox_text{width:80%; height:auto; position:absolute;top:40%; left:5%;}
+		
+		.clickbox_white{background: url('starbucksicons.png')-122px -822px;
+					width:120px; height:32px;position: absolute; right:5%; bottom:7%;}
+		.clickbox_black{background: url('starbucksicons.png')-1px -822px;
+					width:120px; height:32px;position: absolute; right:5%; bottom:7%;}
+		
+		.halfbox_text2{width:70%;height:auto;position: absolute;top:30%; right:5%; }
+		.halfbox_text2 .font_brown20,.halfbox_text2 .font_brown16{text-align: end;}
+		.halfbox_text3{width:48%;height:auto;position:absolute;top:15%; right:2%;}
+		.halfbox_text3 .font_brown20{ line-height: 60px;}
+		#right30{right:5%;}
+		#bean_img03, #bean_img01{display:block;}
+		#bean_img02, .headline_menu, #bean_img00{display:none;}
+
+		#container_coffeestory{width:100%;}
+		.toptextbox01{width:45%;right:5%; top:10%;}
+		.toptextbox02{width:80%;top:10%; left:5%;}
+		.toptextbox01 .font_white20{ font-weight: bold;}
+		.font_white{color:#fff;font-size: 12px;}
+		.clickbox_beige{width:100px; height:26px;background-color: #fff; border: 1px solid #007042;
+					color:#fff; border-radius: 10px; margin-top:20px; 
+					font-size: 14px;
+					text-align: center;line-height: 26px; font-weight: bold;}
+		.clickbox_beige:hover{background-color: #007042;color:#fff;}
+		.clickbox_beige2{width:180px; height:26px;background-color: #fff; border: 1px solid #007042;
+					color:#fff; border-radius: 10px; margin-top:20px; 
+					font-size: 14px;
+					text-align: center;line-height: 26px; font-weight: bold;}
+		.clickbox_beige2:hover{background-color: #007042;color:#fff;}
+		.submenubox01{width:100%; height:76px;}
+		.submenubox_quarter{width:50%; border-bottom:1px solid #8e8e8e }
+		.submenubox_quarter .font_brown14{font-size: 12px;}
+		.submenubox_quarter:hover .bottom_arrow_down{display: none;}
+		.m_arrow_down{display: none;}
+		.banner_box{width:100%; margin:0 auto;position: relative; overflow: hidden;}
+		.banner_box2, .banner_box_white{width:100%; margin:0 auto;position: relative;}
+		.banner_box5{width:100%;height:48px; margin:0 auto;position: relative;overflow: hidden;}
+		.banner_box3,.banner_box4{width:98%; margin:0 auto;position: relative;overflow: hidden;}
+		.coffee_story_text{width:100%;}
+		.coffee_story_text{width:90%; 
+			margin:0 5%;}
+		.coffee_story_text .font_brown14{width:100%; margin-top:18px;}
+		.banner_box2 .clickbox_beige2{position: relative;margin-left: 10%;margin-top: 20px;}
+		.banner_box_center .font_white16{text-align: center;width:180px; height:26px;
+						position: absolute;top:35% ;left:38%;}
+		.banner_box_center2 .font_white16{text-align: center;width:180px; height:26px;
+						position: absolute;top:10% ;left:38%;}
+		.roasting_box{width:48%; height:auto;  }
+		.arbica_box{width:90%; margin:5%;}
+		.arbica_box2, .box35, .box65, .box40, .box60{width:100%;}
+		.fullbox2 .font_brown16{float:left;position: relative; padding-top:11%;
+							padding-left: 10px; width:50%;}
+		.img135{width:135px; height:auto;}
+		.fullbox2 .font_brown14{padding-top: 30px;}
+		.arbica_box2 .fullbox2 .font_brown16{ width:90%; margin:5%; padding:0;
+								margin-bottom: 15px;}
+		.arbica_box2 .fullbox2 .font_brown14{width:90%; margin:5%; padding:0;}
+		.fullbox_text{width:90%; margin:5%;}
+		.box65 .fullbox2 .font_brown16, .box60 .fullbox2 .font_brown16{ width:90%; margin:5%; padding:0;
+								margin-bottom: 15px;}
+		.box65 .fullbox2 .font_brown14,.box60 .fullbox2 .font_brown14{width:90%; margin:5%; padding:0;}
+		.reserve_logo_box{width:10%;}
+		.reserve_text_box{width:70%;}
+		.reserve_click_box{width:20%;}
+		.reserve_text_box .font_white{text-align: center; line-height: 40px;}
+		.reserve_click_box .font_white{text-align: center; line-height: 80px;}
+		.box20{width:33%;}
+		.box10{width:18%;}
+		.banner_white_back{height:18px;}
+		.banner_img_back{display: none;}
+		.theme_submenu_list{margin-left:5%;}
+
+	}
+
+
+
+
+
+	@media (min-width:0) and (max-width:570px){
+		#wholewrap, #wrap, #header{width:100%;}
+		#container_menu_coffee{width:100%; margin:0 auto;}
+		.disappear_box,.disappear_box2,.tablet_show{display:none;}
+		.mobile_show, .mobile_show2{display:block;}
+		.menulist_box {width:100%; margin-top: 0;}
+		.headline_menu{font-family: 'headline R'; font-size: 20px; text-align: center;
+					 color:#2c1810; position: absolute; top:30%; left:43.5%;}
+		.fullbox{width:100%;}
+		.halfbox{width:100%;display: inline-block;}
+
+		.halfbox_text{width:90%; height:auto; position:absolute;top:40%; left:5%;
+						text-align: end;}		
+		.halfbox_text2 .font_brown20{text-align: end;}
+		.halfbox_text2{width:75%;height:auto;position: absolute;top:25%; right:5%; }
+		.halfbox_text3, .halfbox_text4,.halfbox_text5{width:48%;height:auto;position:absolute;
+			top:30%; right:5%;}
+		
+		.halfbox_text3 .font_brown20,.halfbox_text4 .font_brown20, .halfbox_text5 .font_white20{text-align: end;}
+		#right30{right:5%;}
+		.clickbox_white{width:89px; height:25px; 
+					background: url('starbucksicons.png')-90px -617px;
+					background-size: 750px 750px;
+					position: absolute; right:5%; bottom:15%;}
+		.clickbox_black{width:89px; height:25px; 
+					background: url('starbucksicons.png')-1px -617px;
+					background-size: 750px 750px;
+					position: absolute; right:5%; bottom:15%;}
+		.clickbox_beige2{width:180px; height:26px;background-color: #c1ae96;
+					color:#fff; border-radius: 10px; margin-top:20px; 
+					font-size: 14px;
+					text-align: center;line-height: 26px; font-weight: bold;}
+		.clickbox_beige2:hover{background-color: #fff;color:#c1ae96;}
+		#bean_img03, #bean_img01{display:block;}
+		#bean_img02, .headline_menu, #bean_img00{display:none;}
+		
+		.m_footer_box3 ul li .font_brown14{font-size: 12px;}
+		.m_footer_box4 .font_brown14{text-align: center; line-height: 42px;
+									font-size: 12px;}
+		.m_footer_box6 .font_brown14{font-size: 12px;}
+		
+		#container_coffeestory{width:100%;}
+		.toptextbox01{width:100%; text-align: end;top:25%;}
+		.toptextbox02{width:70%;top:10%; left:5%;}
+		.toptextbox01 .font_white20{color:#fff; font-size: 20px; font-weight: bold;}
+		.toptextbox01 .font_white16{color:#fff; font-size: 16px; margin-top: 10px;}
+		.font_white{color:#fff;font-size: 12px;}
+		.submenubox01{width:100%; height:38px;position: relative;overflow: hidden;}
+		.submenubox_quarter{width:100%; border-bottom:1px solid #8e8e8e }
+		.submenubox_quarter .font_brown14{font-size: 12px;}
+		.submenubox_quarter:hover .bottom_arrow_down{display: none;}
+		.submenubox_quarter:hover .m_arrow_down{background: url('starbucksicons.png')-36px -793px;
+					width:24px; height:16px; position: absolute;
+					top:35%; right:5%;}
+		.m_arrow_down{background: url('starbucksicons.png')-36px -773px;
+					width:24px; height:16px; position: absolute;
+					top:35%; right:5%;}
+		.m_arrow_down:hover{background: url('starbucksicons.png')-36px -793px;
+					width:24px; height:16px; position: absolute;
+					top:35%; right:5%;}
+		.banner_box{width:100%;position: relative;overflow: hidden;}
+		.banner_box2,.banner_box_white{width:100%;position: relative;
+												overflow: hidden;}
+		.banner_box5{width:100%;height:48px; margin:0 auto;position: relative;overflow: hidden;}
+		.banner_box3,.banner_box4{width:98%; margin:0 auto;position: relative;overflow: hidden;}
+		.coffee_story_text{width:100%;}
+		.coffee_story_text{width:90%; margin:0 5%;}
+		.coffee_story_text .font_brown14{width:100%; margin-top: 20px;}
+		.banner_box2 .clickbox_beige2{position: relative;margin-left: 10%;margin-top: 20px;}
+		.banner_box_center .font_white16{text-align: center;width:180px; height:26px;
+						position: absolute;top:24% ;left:20%; font-size: 14px;}
+		.banner_box_center2 .font_white16{text-align: center;width:180px; height:26px;
+						position: absolute;top:6% ;left:20%; font-size: 14px;}
+		.roasting_box{width:98%; height:auto; }
+		.arbica_box{width:90%; margin:5%;}
+		.arbica_box2, .box35, .box65, .box40, .box60{width:100%;}
+		.fullbox2 .font_brown16{float:left;position: relative; padding-top: 11%;
+							padding-left: 10px; width:48%;}
+		.img135{width:135px; height:auto;}
+		.fullbox2 .font_brown14{padding-top: 5%;}
+		.arbica_box2 .fullbox2 .font_brown16{width:90%; margin:5%; padding:0;}
+		.arbica_box2 .fullbox2 .font_brown14{width:90%; margin:5%; padding:0;}
+		.fullbox_text{width:90%; margin:5%;}
+		.box65 .fullbox2 .font_brown16, .box60 .fullbox2 .font_brown16{width:90%; margin:5%; padding:0;}
+		.box65 .fullbox2 .font_brown14, .box60 .fullbox2 .font_brown14{width:90%; margin:5%; padding:0;}
+		.reserve_logo_box{width:20%;}
+		.reserve_text_box{width:59%;}
+		.reserve_click_box{width:21%;}
+		.reserve_text_box .font_white{text-align: left; line-height: 18px;
+					padding:2%;}
+		.reserve_click_box .font_white{text-align: left; line-height: 20px;
+					padding:14%;}
+		.box20{width:50%;}
+		.box10{width:31%; margin:1%;}
+		.banner_white_back{height:24px;}
+		.banner_img_back{display: none;}
+		.theme_submenu_list{margin:1%;}
+
+	}
+
+
+
+/*
+disappear_box: web,tab 에서 보여주기 
+mobile_show:mobile에서만 보여주기
+disappear_box2: web 에서만 보여주기 
+mobile_show2: mobile, tab에서 보여주기
+
+*/
